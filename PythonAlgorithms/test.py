@@ -7,13 +7,13 @@ c = 1
 
 # some comment
 def printme(str):
-    "This prints a passed string"
+    """This prints a passed string"""
     print str
     return
 
 
 def fibonacci(n):
-    "find the nth fib number"
+    """find the nth fib number"""
     if n == 1 or n == 2:
         return 1
     else:
