@@ -21,15 +21,25 @@ def fibonacci(n):
 
 
 # this is a first attempt
-def oneDimLorentzTransformation(x, t, v):
+def _gamma(v):
+    return 1 / (1 - math.sqrt(v))
+
+
+def space_component(x, t, v):
     """A boost in the x-dir only"""
-    beta = v / c
-    gamma = 1 / (1 - math.sqrt(beta))
-    return gamma * ( x - v*t)
+    return _gamma(v) * (x - v*t)
+
+
+def time_component(x, t, v):
+    """The time component"""
+    return _gamma(v) * (t - v*x)
+
 
 
 alist = [10, 20, 30]
 printme(alist)
 printme("hamish")
 printme(fibonacci(10))
-print oneDimLorentzTransformation(1, 1, 0.34)
+
+print space_component(1, 1, 0.34)
+print time_component(1, 1, 0.34)
