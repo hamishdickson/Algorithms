@@ -9,4 +9,4 @@ def gcd(p, q):
         return gcd(q, r)
 
 
-print gcd(9, 12 )
+print gcd(9, 12)
