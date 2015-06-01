@@ -7,6 +7,3 @@ def gcd(p, q):
     else:
         r = p % q
         return gcd(q, r)
-
-
-print gcd(9, 12)
