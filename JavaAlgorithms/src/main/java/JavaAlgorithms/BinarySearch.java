@@ -12,6 +12,10 @@ import java.util.Arrays;
  * Program takes the name of a whitelist file (ie a seq of ints) as argument and filters any entry that is on the
  * whitelist from standard output, leaving only integers that are not on the whitelist on std output
  *
+ * running: java BinarySearch largeW.txt < largeT.txt
+ *
+ * running time: O(log n)
+ *
  * note: array a must be sorted
  */
 public class BinarySearch {
