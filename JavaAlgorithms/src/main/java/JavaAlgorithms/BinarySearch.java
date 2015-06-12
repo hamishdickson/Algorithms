@@ -24,7 +24,7 @@ public class BinarySearch {
      * rank = binary search
      * @param key to find in a
      * @param a array of ints to search
-     * @return position
+     * @return position position in the array
      */
     public static int rank(int key, int[] a) {
         int lo = 0;
@@ -39,6 +39,7 @@ public class BinarySearch {
         return -1;
     }
 
+    // todo move this out to a unit test - it shouldn't be in here like this!
     public static void main(String[] args) {
         In in = new In(args[0]);
         int[] whitelist = in.readAllInts();
