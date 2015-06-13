@@ -1,4 +1,4 @@
-package JavaAlgorithms;
+package JavaAlgorithms.Section1;
 
 import edu.princeton.cs.introcs.StdDraw;
 import edu.princeton.cs.introcs.StdOut;

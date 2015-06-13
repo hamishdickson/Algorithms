@@ -5,10 +5,12 @@
 		<testFolder url="file://$MODULE_DIR$/src/test/java"/>
 		<excludeFolder url="file://$MODULE_DIR$/target"/>
 	</contentEntry>
-	<lib name="Maven: junit:junit:3.8.1" scope="TEST"/>
+	<lib name="Maven: junit:junit:4.10" scope="TEST"/>
+	<lib name="Maven: org.hamcrest:hamcrest-core:1.1" scope="TEST"/>
 	<levels>
-		<level name="Maven: junit:junit:3.8.1" value="project"/>
 		<level name="stdlib" value="project"/>
 		<level name="stdlib-package" value="project"/>
+		<level name="Maven: junit:junit:4.10" value="project"/>
+		<level name="Maven: org.hamcrest:hamcrest-core:1.1" value="project"/>
 	</levels>
 </component>
