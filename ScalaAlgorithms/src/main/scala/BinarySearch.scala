@@ -5,10 +5,10 @@ class BinarySearch {
       val mid = lo + (hi - lo + 1) / 2
       a match {
         case (array: Array[Int]) if (array(mid) == key) => mid
-        case (array: Array[Int]) if (array(mid) > key) => r(list, key, lo, mid - 1)
-        case (array: Array[Int]) if (array(mid) < key) => r(list, key, mid + 1, hi)
+        case (array: Array[Int]) if (array(mid) > key) => r(key, a, lo, mid - 1)
+        case (array: Array[Int]) if (array(mid) < key) => r(key, a, mid + 1, hi)
       }
     }
-    r(list, key, 0, list.length - 1)
+    r(key, a, 0, a.length - 1)
   }
 }
