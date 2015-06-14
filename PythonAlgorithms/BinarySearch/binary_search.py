@@ -1,6 +1,5 @@
-#!/usr/bin/python
-
 def binarySearch(key, a):
+    """binary search"""
     lo = 0
     hi = len(a) - 1
     

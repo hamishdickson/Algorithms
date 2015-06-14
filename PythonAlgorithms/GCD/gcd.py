@@ -1,5 +1,3 @@
-#!/usr/bin/python
-
 def gcd(p, q):
     """greatest common divisor"""
     if q == 0:
