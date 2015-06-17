@@ -8,10 +8,10 @@ import org.junit.Test;
  */
 public class DijkstraTest extends TestCase {
     @Test
-    public void evaluateSimpleExpression() {
+    public void testEvaluateSimpleExpression() {
         String expression = "( 1 + ( ( 2 + 3 ) * ( 4 * 5 ) ) )";
         Dijkstra dijkstra = new Dijkstra();
 
-        assertEquals(101, dijkstra.dijkstra(expression));
+        assertEquals(101.0, dijkstra.dijkstra(expression));
     }
 }

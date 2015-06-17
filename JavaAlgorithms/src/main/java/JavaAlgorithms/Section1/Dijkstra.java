@@ -17,8 +17,8 @@ import java.util.Stack;
  */
 public class Dijkstra {
     public double dijkstra(String string) {
-        Stack<String> ops = new Stack<>();
-        Stack<Double> vals = new Stack<>();
+        Stack<String> ops = new Stack<String>();
+        Stack<Double> vals = new Stack<Double>();
 
         String[] parts = string.split(" ");
 
@@ -42,6 +42,7 @@ public class Dijkstra {
                 else if (op.equals("*")) v = vals.pop() * v;
                 else if (op.equals("/")) v = vals.pop() / v;
                 else if (op.equals("sqrt")) v = Math.sqrt(v);
+                vals.push(v);
             } else {
                 vals.push(Double.parseDouble(s));
             }
