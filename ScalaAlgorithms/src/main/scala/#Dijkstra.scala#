@@ -1,0 +1,24 @@
+class Dijkstra {
+  def dijkstra(in: String) {
+    val s = in.split(" ")
+
+    def dij(d: List[String], ops: List[String], vals: List[Double], sum: Int): Int = d match {
+      case x :: List() => sum
+      case x :: xs => x match {
+        case "(" => dij(xs, ops, vals, sum)
+        case "+" => dij(xs, x :: ops, vals, sum)
+        case "-" => dij(xs, x :: ops, vals, sum)
+        case "*" => dij(xs, x :: ops, vals, sum)
+        case "/" => dij(xs, x :: ops, vals, sum)
+        case "sqrt" => dij(xs, x :: ops, vals, sum)
+        case ")" => {
+          x match {
+        
+          }
+          dij(xs, ops, vals, sum)
+        }
+        case _ => dij(xs, ops, x.toDouble :: vals, sum)
+      }
+    }
+  }
+}
