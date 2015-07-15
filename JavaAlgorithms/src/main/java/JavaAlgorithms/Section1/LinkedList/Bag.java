@@ -3,7 +3,7 @@ package JavaAlgorithms.Section1.LinkedList;
 import java.util.Iterator;
 
 /**
- * Created by hamishdickson on 12/07/15.
+ * linked list implementation of a bag
  */
 public class Bag<Item> implements Iterable<Item> {
     private Node first;

@@ -1,8 +1,7 @@
 package JavaAlgorithms.Section1.LinkedList;
 
 /**
- * Created by hamishdickson on 12/07/15.
- *
+ * linked list implementation of a queue
  */
 public class FifoQueue<Item> {
     private Node first; // link to least recently added node
