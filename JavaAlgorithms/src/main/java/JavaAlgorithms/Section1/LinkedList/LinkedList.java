@@ -33,5 +33,12 @@ public class LinkedList {
             else if (!q.isEmpty()) StdOut.print(q.dequeue() + " ");
         }
         StdOut.println("(" + q.size() + " left on queue)");
+
+        StdOut.println("---- Bag ----");
+        Bag<String> b = new Bag<>();
+        while (!StdIn.isEmpty()) {
+            String item = StdIn.readString();
+            b.add(item);
+        }
     }
 }
