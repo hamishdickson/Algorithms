@@ -28,4 +28,8 @@ public class FixedCapacityStackOfStrings {
     public String pop() {
         return stack[--size];
     }
+
+    public boolean isFull() {
+        return stack.length == size;
+    }
 }
