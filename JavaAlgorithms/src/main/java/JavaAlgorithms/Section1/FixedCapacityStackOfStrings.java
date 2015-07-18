@@ -6,26 +6,26 @@ package JavaAlgorithms.Section1;
  * Note created to do exercise
  */
 public class FixedCapacityStackOfStrings {
-    private String[] a;
-    private int N;
+    private String[] stack;
+    private int size;
 
-    public FixedCapacityStackOfStrings(int cap) {
-        a = new String[cap];
+    public FixedCapacityStackOfStrings(int capacity) {
+        stack = new String[capacity];
     }
 
     public boolean isEmpty() {
-        return N == 0;
+        return size == 0;
     }
 
     public int size() {
-        return N;
+        return size;
     }
 
     public void push(String item) {
-        a[N++] = item;
+        stack[size++] = item;
     }
 
     public String pop() {
-        return a[--N];
+        return stack[--size];
     }
 }
