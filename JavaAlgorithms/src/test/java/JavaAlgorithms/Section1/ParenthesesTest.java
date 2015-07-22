@@ -14,9 +14,25 @@ public class ParenthesesTest extends TestCase {
     }
 
     @Test
+    public void testThatBetterExampleWorks() {
+        Parentheses parentheses = new Parentheses();
+        String example = "({[()]})";
+
+        assertEquals(true, parentheses.isBalanced(example));
+    }
+
+    @Test
     public void testThatDumbFailureExampleFails() {
         Parentheses parentheses = new Parentheses();
         String example = "((";
+
+        assertEquals(false, parentheses.isBalanced(example));
+    }
+
+    @Test
+    public void testThatBetterFailureExampleFails() {
+        Parentheses parentheses = new Parentheses();
+        String example = "({[(]})";
 
         assertEquals(false, parentheses.isBalanced(example));
     }

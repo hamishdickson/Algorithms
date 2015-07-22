@@ -6,29 +6,42 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Parentheses {
-    Map<String, String> pairs = new HashMap<>();
+    private Map<String, String> pairs = new HashMap<>();
 
     public boolean isBalanced(String testString) {
-        pairs.put(")", "(");
-        pairs.put("}", "{");
-        pairs.put("]", "[");
-
+        buildPairsMap();
         PushdownStack<String> pushdownStack = new PushdownStack<>();
 
         for (int i = 0; i < testString.length(); i++) {
             String s = testString.substring(i, i + 1);
 
-            if (s.equals("(") || s.equals("{") || s.equals("[")) {
+            if (isOpeningBracket(s)) {
                 pushdownStack.push(s);
             } else {
-                String last = pushdownStack.pop();
-                String lastPair = pairs.get(s);
-                if (!lastPair.equals(last)) return false;
+                if(isUnbalanced(pushdownStack, s)) return false;
             }
         }
+        
+        return pushdownStack.isEmpty();
+    }
 
-        if (!pushdownStack.isEmpty()) return false;
+    private boolean isUnbalanced(PushdownStack<String> pushdownStack, String s) {
+        String lastOpening = pushdownStack.pop();
+        String newClosing = pairs.get(s);
+        return doesTheClosingBracketMatchAnOpeningBracket(lastOpening, newClosing);
+    }
 
-        return true;
+    private boolean doesTheClosingBracketMatchAnOpeningBracket(String last, String lastPair) {
+        return !lastPair.equals(last);
+    }
+
+    private void buildPairsMap() {
+        pairs.put(")", "(");
+        pairs.put("}", "{");
+        pairs.put("]", "[");
+    }
+
+    private boolean isOpeningBracket(String bracket) {
+        return bracket.equals("(") || bracket.equals("{") || bracket.equals("[");
     }
 }
