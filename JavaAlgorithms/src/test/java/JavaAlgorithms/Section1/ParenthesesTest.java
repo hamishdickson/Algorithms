@@ -1,5 +1,6 @@
 package JavaAlgorithms.Section1;
 
+import JavaAlgorithms.Section1.Exercises.Parentheses;
 import junit.framework.TestCase;
 import org.junit.Test;
 

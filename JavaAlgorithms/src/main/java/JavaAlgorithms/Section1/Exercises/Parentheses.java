@@ -1,4 +1,4 @@
-package JavaAlgorithms.Section1;
+package JavaAlgorithms.Section1.Exercises;
 
 import JavaAlgorithms.Section1.LinkedList.PushdownStack;
 

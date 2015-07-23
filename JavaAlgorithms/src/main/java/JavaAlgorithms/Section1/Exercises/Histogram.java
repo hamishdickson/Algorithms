@@ -1,4 +1,4 @@
-package JavaAlgorithms.Section1.Exercises1dot1;
+package JavaAlgorithms.Section1.Exercises;
 
 /**
  * Created by hamishdickson on 13/06/15.
