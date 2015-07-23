@@ -35,4 +35,8 @@ public class PushdownStack<Item> {
         numberOfItems--;
         return item;
     }
+
+    public Item peek() {
+        return (Item) first.item;
+    }
 }
