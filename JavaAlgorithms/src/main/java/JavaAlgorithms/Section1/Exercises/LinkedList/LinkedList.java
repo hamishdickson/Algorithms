@@ -45,4 +45,17 @@ public class LinkedList<Item> {
 
         last = position;
     }
+
+    public void delete(int k) {
+        if (numberOfItems > k) {
+            Node position = first;
+            for (int i = 1; i < k - 1; i++) {
+                position = position.next;
+            }
+
+            position.next = position.next.next;
+
+            numberOfItems--;
+        }
+    }
 }
