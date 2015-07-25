@@ -25,6 +25,10 @@ public class LinkedList<Item> {
         }
     }
 
+    public Item peek() {
+        return (Item) last.item;
+    }
+
     /**
      * created for 1.3.19
      */
