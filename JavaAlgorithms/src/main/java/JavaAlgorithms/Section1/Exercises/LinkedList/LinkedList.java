@@ -1,35 +1,34 @@
 package JavaAlgorithms.Section1.Exercises.LinkedList;
 
 /**
- * use a stack for these tests
+ * linked list whos first item is first
  */
 
 public class LinkedList<Item> {
-    private Node first; // top of stack - most recently added node
+    private Node first;
+    private Node last;
     private int numberOfItems;
 
-    public boolean isEmpty() {
-        return first == null;
-    }
-
-    public int size() {
-        return numberOfItems;
-    }
-
-    // add item to top of stack
     public void push(Item item) {
-        Node oldFirst = first;
-        first = new Node();
-        first.item = item;
-        first.next = oldFirst;
-        numberOfItems++;
+        if (numberOfItems == 0) {
+            first = new Node();
+            first.item = item;
+
+            last = first;
+            last.item = item;
+        } else {
+            Node oldLast = last;
+            last = new Node();
+            last.item = item;
+            last.next = oldLast;
+            numberOfItems++;
+        }
     }
 
-    // remove item from top of stack
-    public Item pop() {
-        Item item = (Item) first.item;
-        first = first.next;
-        numberOfItems--;
-        return item;
+    /**
+     * created for 1.3.19
+     */
+    public void removeLast() {
+
     }
 }
