@@ -15,10 +15,6 @@ public class LinkedList<Item> {
             first.item = item;
 
             last = first;
-        } else if (numberOfItems == 1) {
-            last = new Node();
-            first.next = last;
-            last.item = item;
         } else {
             Node oldLast = last;
             last = new Node();
@@ -34,6 +30,9 @@ public class LinkedList<Item> {
 
     /**
      * created for 1.3.19
+     *
+     * loop through linked list and get to the second to last position (it's - 2 because you want the one before the one
+     * you want to set to last... that totally makes sense)
      */
     public void removeLast() {
         Node position = first;
