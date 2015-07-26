@@ -58,4 +58,12 @@ public class LinkedList<Item> {
             numberOfItems--;
         }
     }
+
+    /**
+     * @param key item value
+     * @return if key is in list
+     */
+    public boolean find(Item key) {
+        return false;
+    }
 }
