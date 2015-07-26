@@ -48,4 +48,23 @@ public class LinkedListTest extends TestCase {
 
         assertEquals(true, linkedList.equals(testList));
     }
+
+    /**
+     * 1.3.21 Write a method find() that takes a linked list and a string key as arguments and returns true if some
+     * node in the list has key as it's item field, false if not
+     *
+     * actually implement this a bit differently
+     */
+    @Test
+    public void testFindMethod() {
+        LinkedList<Integer> linkedList = new LinkedList<>();
+        linkedList.push(1);
+        linkedList.push(2);
+        linkedList.push(3);
+        linkedList.push(4);
+
+        assertEquals(true, linkedList.find(1));
+
+    }
+
 }
