@@ -64,6 +64,11 @@ public class LinkedList<Item> {
      * @return if key is in list
      */
     public boolean find(Item key) {
+        Node position = first;
+        for (int i = 1; i < numberOfItems; i++) {
+            if (position.item.equals(key)) return true;
+            position = position.next;
+        }
         return false;
     }
 }
