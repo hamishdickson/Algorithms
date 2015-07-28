@@ -67,4 +67,21 @@ public class LinkedListTest extends TestCase {
 
     }
 
+    @Test
+    public void testRemoveAfter() {
+        LinkedList<Integer> linkedList = new LinkedList<>();
+        linkedList.push(1);
+        linkedList.push(2);
+        linkedList.push(3);
+        linkedList.push(4);
+
+        LinkedList<Integer> linkedListAfter = new LinkedList<>();
+        linkedListAfter.push(1);
+        linkedListAfter.push(2);
+        linkedListAfter.push(4);
+
+        linkedList.removeAfter(2);
+
+        assertEquals(true, linkedList.equals(linkedListAfter));
+    }
 }

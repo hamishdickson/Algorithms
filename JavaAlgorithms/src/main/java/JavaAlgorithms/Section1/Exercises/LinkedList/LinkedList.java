@@ -71,4 +71,8 @@ public class LinkedList<Item> {
         }
         return false;
     }
+
+    public void removeAfter(Item i) {
+        
+    }
 }
