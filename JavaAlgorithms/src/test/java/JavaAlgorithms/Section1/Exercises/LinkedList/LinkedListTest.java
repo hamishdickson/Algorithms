@@ -67,6 +67,9 @@ public class LinkedListTest extends TestCase {
 
     }
 
+    /**
+     * 1.3.24 write a method removeAfter() that takes a linked list node as arg and removes the node following it
+     */
     @Test
     public void testRemoveAfter() {
         LinkedList<Integer> linkedList = new LinkedList<>();

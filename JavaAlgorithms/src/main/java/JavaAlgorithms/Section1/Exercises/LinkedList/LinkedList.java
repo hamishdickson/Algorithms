@@ -73,6 +73,6 @@ public class LinkedList<Item> {
     }
 
     public void removeAfter(Item i) {
-        
+
     }
 }
