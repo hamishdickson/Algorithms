@@ -9,7 +9,7 @@ package javaAlgorithms.section1.unionFind;
  *  - height: max depth among roots
  */
 
-public class WeightedUnionFind {
+public class WeightedUnionFind implements UnionFind {
     private int[] id; // parent link (site indexed)
     private int[] sz; // size of component for roots (site indexed)
     private int count; // number of components
@@ -26,11 +26,11 @@ public class WeightedUnionFind {
         }
     }
 
-    public int getCount() {
+    public int count() {
         return count;
     }
 
-    public boolean isConnected(int p, int q) {
+    public boolean connected(int p, int q) {
         return find(p) == find(q);
     }
 

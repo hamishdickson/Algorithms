@@ -39,7 +39,7 @@ public abstract class TestStub {
             if (less(a[i], a[i - 1])) return false;
         return true;
     }
-    
+
     public void runMe(String[] args) {
         String[] a = StdIn.readAllStrings();
         sort(a);
