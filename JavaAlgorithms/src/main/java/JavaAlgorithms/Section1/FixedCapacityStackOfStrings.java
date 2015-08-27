@@ -1,4 +1,4 @@
-package JavaAlgorithms.Section1;
+package javaAlgorithms.section1;
 
 /**
  * Created by hamishdickson on 18/07/15.

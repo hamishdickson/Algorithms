@@ -1,4 +1,4 @@
-package JavaAlgorithms.Section1;
+package javaAlgorithms.section1;
 
 import java.util.Stack;
 

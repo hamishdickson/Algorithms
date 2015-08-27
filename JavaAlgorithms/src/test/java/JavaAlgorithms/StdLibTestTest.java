@@ -1,4 +1,4 @@
-package JavaAlgorithms;
+package javaAlgorithms;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

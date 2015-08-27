@@ -1,4 +1,4 @@
-package JavaAlgorithms.Section1.Exercises;
+package javaAlgorithms.section1.exercises;
 
 import junit.framework.TestCase;
 import org.junit.Test;

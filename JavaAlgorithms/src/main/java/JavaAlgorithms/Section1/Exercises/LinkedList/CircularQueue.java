@@ -1,4 +1,4 @@
-package JavaAlgorithms.Section1.Exercises.LinkedList;
+package javaAlgorithms.section1.exercises.linkedList;
 
 /**
  * Exercise 1.3.29 Write a Queue implementation that uses a circular linked list, which is the same as a linked list

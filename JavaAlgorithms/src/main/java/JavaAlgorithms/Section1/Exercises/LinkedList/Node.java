@@ -1,4 +1,4 @@
-package JavaAlgorithms.Section1.Exercises.LinkedList;
+package javaAlgorithms.section1.exercises.linkedList;
 
 /**
  * Linked List Node for exercises

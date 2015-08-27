@@ -1,6 +1,6 @@
-package JavaAlgorithms.Section1.Exercises;
+package javaAlgorithms.section1.exercises;
 
-import JavaAlgorithms.Section1.LinkedList.PushdownStack;
+import javaAlgorithms.section1.linkedList.PushdownStack;
 
 import java.util.HashMap;
 import java.util.Map;

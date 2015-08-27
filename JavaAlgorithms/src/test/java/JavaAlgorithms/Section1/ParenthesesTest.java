@@ -1,6 +1,6 @@
-package JavaAlgorithms.Section1;
+package javaAlgorithms.section1;
 
-import JavaAlgorithms.Section1.Exercises.Parentheses;
+import javaAlgorithms.section1.exercises.Parentheses;
 import junit.framework.TestCase;
 import org.junit.Test;
 

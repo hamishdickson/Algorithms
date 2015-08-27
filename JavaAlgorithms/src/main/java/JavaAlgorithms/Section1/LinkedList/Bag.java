@@ -1,4 +1,4 @@
-package JavaAlgorithms.Section1.LinkedList;
+package javaAlgorithms.section1.linkedList;
 
 import java.util.Iterator;
 
