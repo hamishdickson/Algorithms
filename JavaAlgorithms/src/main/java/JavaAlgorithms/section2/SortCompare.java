@@ -5,6 +5,7 @@ import edu.princeton.cs.introcs.StdRandom;
 import edu.princeton.cs.introcs.Stopwatch;
 import javaAlgorithms.section2.insertionSort.Insertion;
 import javaAlgorithms.section2.selectionSort.Selection;
+import javaAlgorithms.section2.shellSort.Shell;
 
 /**
  * A bit of code allowing comparison of sorting algorithms
@@ -22,7 +23,7 @@ public class SortCompare {
         } else if (alg.equals("Selection")) {
             sort = new Selection();
         } else {
-            sort = new Insertion();
+            sort = new Shell();
         }
 
         sort.sort(a);
@@ -53,7 +54,7 @@ public class SortCompare {
         int T = Integer.parseInt(args[3]);
 
         double t1 = compare.timeRandomInput(alg1, N, T);
-        double t2 = compare.timeRandomInput(alg1, N, T);
+        double t2 = compare.timeRandomInput(alg2, N, T);
 
         StdOut.printf("For %d random doubles\n    %s is ", N, alg1);
         StdOut.printf("%.1f times faster than %s\n", t2/t1, alg2);
