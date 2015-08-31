@@ -1,7 +1,7 @@
 package javaAlgorithms.section1.unionFind;
 
 /**
- * Basically to make my testing life a little less painful
+ * Basically to make my testing life a little lessThan painful
  */
 public interface UnionFind {
     int count();

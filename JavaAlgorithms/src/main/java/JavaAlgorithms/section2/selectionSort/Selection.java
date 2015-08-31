@@ -6,7 +6,7 @@ import javaAlgorithms.section2.SortingStub;
 /**
  * Selection Sort - sort a into increasing order
  *
- * Method: First, find the smallest entry in the array and exchange it with the first element. Then find the second smallest
+ * Method: First, find the smallest entry in the array and swapElements it with the first element. Then find the second smallest
  * etc etc
  *
  * Analysis: uses ~N^2 / 2 compares and N exchanges to sort an array of length N
@@ -19,14 +19,14 @@ public class Selection extends SortingStub implements Sort {
 
         for (int i = 0; i < N; i++) {
             /**
-             * exchange a[i] with the smallest entry in a[a + 1, ... N)
+             * swapElements a[i] with the smallest entry in a[a + 1, ... N)
              */
             int min = i;
 
             for (int j = i + 1; j < N; j++) {
-                if (less(a[j], a[min]))
+                if (lessThan(a[j], a[min]))
                     min = j;
-                exch(a, i, min);
+                swapElements(a, i, min);
             }
 
         }

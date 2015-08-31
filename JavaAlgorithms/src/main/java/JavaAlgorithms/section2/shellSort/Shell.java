@@ -24,8 +24,8 @@ public class Shell extends SortingStub implements Sort{
 
         while (h >= 1) {
             for (int i = h; i < N; i++) {
-                for (int j = i; j >= h && less(a[j], a[j-h]); j -= h)
-                    exch(a, j ,j-h);
+                for (int j = i; j >= h && lessThan(a[j], a[j - h]); j -= h)
+                    swapElements(a, j, j - h);
             }
             h = h/3;
         }
