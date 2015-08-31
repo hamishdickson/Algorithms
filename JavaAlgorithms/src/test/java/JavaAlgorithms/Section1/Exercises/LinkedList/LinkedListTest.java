@@ -13,7 +13,7 @@ public class LinkedListTest extends TestCase {
      */
     @Test
     public void testRemoveLastNode() {
-        LinkedList<Integer> linkedList = new LinkedList<>();
+        LinkedList<Integer> linkedList = new LinkedList<Integer>();
         linkedList.push(1);
         linkedList.push(2);
         linkedList.push(3);
@@ -33,13 +33,13 @@ public class LinkedListTest extends TestCase {
     @Test
     @Ignore
     public void testNewDeleteMethod() {
-        LinkedList<Integer> linkedList = new LinkedList<>();
+        LinkedList<Integer> linkedList = new LinkedList<Integer>();
         linkedList.push(1);
         linkedList.push(2);
         linkedList.push(3);
         linkedList.push(4);
 
-        LinkedList<Integer> testList = new LinkedList<>();
+        LinkedList<Integer> testList = new LinkedList<Integer>();
         testList.push(1);
         testList.push(2);
         testList.push(4);
@@ -57,7 +57,7 @@ public class LinkedListTest extends TestCase {
      */
     @Test
     public void testFindMethod() {
-        LinkedList<Integer> linkedList = new LinkedList<>();
+        LinkedList<Integer> linkedList = new LinkedList<Integer>();
         linkedList.push(1);
         linkedList.push(2);
         linkedList.push(3);
@@ -72,13 +72,13 @@ public class LinkedListTest extends TestCase {
      */
     @Test
     public void testRemoveAfter() {
-        LinkedList<Integer> linkedList = new LinkedList<>();
+        LinkedList<Integer> linkedList = new LinkedList<Integer>();
         linkedList.push(1);
         linkedList.push(2);
         linkedList.push(3);
         linkedList.push(4);
 
-        LinkedList<Integer> linkedListAfter = new LinkedList<>();
+        LinkedList<Integer> linkedListAfter = new LinkedList<Integer>();
         linkedListAfter.push(1);
         linkedListAfter.push(2);
         linkedListAfter.push(4);

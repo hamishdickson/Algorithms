@@ -12,7 +12,7 @@ public class LinkedList {
     public static void main(String[] args) {
         // stack
         StdOut.println("---- Stack ----");
-        PushdownStack<String> s = new PushdownStack<>();
+        PushdownStack<String> s = new PushdownStack<String>();
 
         while (!StdIn.isEmpty()) {
             String item = StdIn.readString();
@@ -25,7 +25,7 @@ public class LinkedList {
         // queue
         // todo - clean this up
         StdOut.println("---- Queue ----");
-        FifoQueue<String> q = new FifoQueue<>();
+        FifoQueue<String> q = new FifoQueue<String>();
         while (!StdIn.isEmpty()) {
             String item = StdIn.readString();
             if (!item.equals("-"))
@@ -35,7 +35,7 @@ public class LinkedList {
         StdOut.println("(" + q.size() + " left on queue)");
 
         StdOut.println("---- Bag ----");
-        Bag<String> b = new Bag<>();
+        Bag<String> b = new Bag<String>();
         while (!StdIn.isEmpty()) {
             String item = StdIn.readString();
             b.add(item);
