@@ -1,5 +1,6 @@
 package javaAlgorithms.section2.insertionSort;
 
+import javaAlgorithms.section2.Sort;
 import javaAlgorithms.section2.SortingStub;
 
 /**
@@ -29,14 +30,13 @@ import javaAlgorithms.section2.SortingStub;
  * Can be speed up by: changing the inner loop so that it moves larger entries to the right, rather than moving them to
  * position.
  */
-public class Insertion extends SortingStub {
+public class Insertion extends SortingStub implements Sort {
 
-    @Override
     public void sort(Comparable[] a) {
         int N = a.length;
 
         /**
-         * insert a[i] amoung a[i-1], a[i-2], ...
+         * insert a[i] among a[i-1], a[i-2], ...
          */
         for (int i = 1; i < N; i++) {
             for (int j = i; j > 0 && less(a[j], a[j - 1]); j--)

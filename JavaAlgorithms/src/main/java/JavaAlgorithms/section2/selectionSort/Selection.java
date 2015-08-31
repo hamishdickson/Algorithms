@@ -1,5 +1,6 @@
 package javaAlgorithms.section2.selectionSort;
 
+import javaAlgorithms.section2.Sort;
 import javaAlgorithms.section2.SortingStub;
 
 /**
@@ -12,8 +13,7 @@ import javaAlgorithms.section2.SortingStub;
  *
  * Notes: Insensitive to input - takes almost the same time for already sorted array
  */
-public class Selection extends SortingStub {
-    @Override
+public class Selection extends SortingStub implements Sort {
     public void sort(Comparable[] a) {
         int N = a.length;
 

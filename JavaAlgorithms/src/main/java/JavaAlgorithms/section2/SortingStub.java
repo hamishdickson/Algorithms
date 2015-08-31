@@ -9,8 +9,7 @@ import edu.princeton.cs.introcs.StdOut;
  *
  * also, in the book this is a big horrible static mess - convert to an abstract class and extend it
  */
-public abstract class SortingStub {
-    public abstract void sort(Comparable[] a);
+public abstract class SortingStub implements Sort {
 
     protected boolean less(Comparable v, Comparable w) {
         return v.compareTo(w) < 0;
