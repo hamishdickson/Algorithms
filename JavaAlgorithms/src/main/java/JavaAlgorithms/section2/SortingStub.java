@@ -9,14 +9,14 @@ import edu.princeton.cs.introcs.StdOut;
  *
  * also, in the book this is a big horrible static mess - convert to an abstract class and extend it
  */
-public abstract class TestStub {
+public abstract class SortingStub {
     public abstract void sort(Comparable[] a);
 
-    private boolean less(Comparable v, Comparable w) {
+    protected boolean less(Comparable v, Comparable w) {
         return v.compareTo(w) < 0;
     }
 
-    private void exch(Comparable[] a, int i, int j) {
+    protected void exch(Comparable[] a, int i, int j) {
         Comparable t = a[i];
         a[i] = a[j];
         a[j] = t;
@@ -25,7 +25,7 @@ public abstract class TestStub {
     /**
      * Print stuff
      */
-    private void show(Comparable[] a) {
+    protected void show(Comparable[] a) {
         for (int i = 0; i < a.length; i++)
             StdOut.print(a[i] + " ");
         StdOut.println();
@@ -34,13 +34,13 @@ public abstract class TestStub {
     /**
      * is stuff actually sorted?
      */
-    public boolean isSorted(Comparable[] a) {
+    protected boolean isSorted(Comparable[] a) {
         for (int i = 1; i < a.length; i++)
             if (less(a[i], a[i - 1])) return false;
         return true;
     }
 
-    public void runMe(String[] args) {
+    protected void runMe(String[] args) {
         String[] a = StdIn.readAllStrings();
         sort(a);
         assert isSorted(a);
