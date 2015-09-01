@@ -17,7 +17,6 @@ public class SortCompare {
 
         Sort sort;
 
-        // Yucky - strategy pattern here maybe?
         if (alg.equals("Insertion")) {
             sort = new Insertion();
         } else if (alg.equals("Selection")) {
